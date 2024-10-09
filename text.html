@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Application</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-color: #555;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        #hero a {
+            background-color: #f04e23;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Features Section */
+        #features {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        #features h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-box {
+            margin: 15px 0;
+        }
+
+        .feature-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* About Section */
+        #about {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        #about p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#">My Web App</a>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div>
+            <h1>Welcome to My Web App</h1>
+            <p>A modern solution to your needs. Start your journey today!</p>
+            <a href="#features">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature-box">
+            <h3>Easy to Use</h3>
+            <p>Our application is designed with simplicity and user-friendliness in mind.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Secure</h3>
+            <p>Security is a top priority, ensuring your data is always safe with us.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Fast Performance</h3>
+            <p>Experience lightning-fast load times and smooth functionality.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a passionate team dedicated to delivering high-quality web solutions that empower users across the globe.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Web App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
